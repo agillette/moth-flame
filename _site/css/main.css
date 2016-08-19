@@ -54,6 +54,7 @@ pre > code { border: 0; padding-right: 0; padding-left: 0; }
 /** Site header */
 .site-header { min-height: 56px; position: fixed; top: 0; left: 0; width: 100%; z-index: 99; }
 
+@media only screen and (min-width: 768px) { .site-header { left: 5vw; width: 90vw; } }
 .site-title { font-size: 26px; line-height: 56px; letter-spacing: -1px; margin-bottom: 0; float: left; }
 .site-title, .site-title:visited { color: #fff; }
 
@@ -134,6 +135,9 @@ pre > code { border: 0; padding-right: 0; padding-left: 0; }
 #about h2 { padding-top: 300px; font-weight: 700; font-size: 30px; line-height: 35px; text-align: center; }
 #about p { font-size: 13px; line-height: 19px; margin: 25px 0 0 0; }
 
+@media screen and (min-width: 768px) { #about { padding-left: 54vw; padding-right: 5vw; }
+  #about h2 { padding-top: 25vh; text-align: left; font-size: 37px; }
+  #about p { font-size: 15px; line-height: 20px; } }
 /* Contact */
 #contact { text-align: center; }
 #contact h2 { font-weight: 700; font-size: 37px; line-height: 30px; padding-top: 160px; margin-bottom: 60px; }
