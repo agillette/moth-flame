@@ -282,10 +282,15 @@
     #intro {
         #branding {
             left: 5vw;
+            top: 40vh;
+            height: 60vh;
             width: 90vw;
             text-align: left;
             .legal {
                 text-align: right;
+                position: absolute;
+                bottom: 3vw;
+                right: 0;
             }
         }
     }
