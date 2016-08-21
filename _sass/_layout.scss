@@ -366,3 +366,33 @@
         background: #505151;
     }
 }
+
+/* Blog */
+#blog {
+  padding-top: 50px;
+  margin-left: 30%;
+  margin-right: 30%;
+  font-family: $base-font-family;
+  h2 {
+      font-weight: 700;
+      font-size: 37px;
+      line-height: 30px;
+      padding-top: 20px;
+      margin-bottom: 30px;
+  }
+
+  p {
+    font-size: $base-font-size;
+    letter-spacing: 0.1em;
+  }
+
+  time {
+    color: #007d85;
+    font-size: $small-font-size;
+  }
+
+  .horizontal-line {
+    width: 250px;
+    color: $grey-color-light;
+  }
+}
