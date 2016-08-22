@@ -19,10 +19,13 @@
 
 .site-title {
     font-size: 26px;
-    line-height: 56px;
+    height: 48px;
     letter-spacing: -1px;
     margin-bottom: 0;
     float: left;
+    background: url('../img/logo-mf.png') center center no-repeat;
+    background-size: contain;
+    text-indent: -9999px;
 
     &,
     &:visited {
@@ -39,12 +42,16 @@
     }
 
     .page-link {
-        color: $text-color;
+        color: #797979;
         line-height: $base-line-height;
+        font-family: $base-sans-family;
+        font-size: 10px;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
 
         // Gaps between nav items, but not on the first one
         &:not(:first-child) {
-            margin-left: 20px;
+            margin-left: 40px;
         }
     }
 
