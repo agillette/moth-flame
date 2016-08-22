@@ -1,0 +1,13 @@
+---
+layout: default
+---
+<body id="press">
+  {% for post in site.press reversed %}
+  <div>
+    <hr class="horizontal-line"></hr>
+    <time class="date">{{ post.date | date: "%B %d<br>%Y" }}</time>
+    <h2>{{ post.title }}</h2>
+    <p>{{ post.content }}</p>
+  </div>
+  {% endfor %}
+</body>
