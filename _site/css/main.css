@@ -152,6 +152,13 @@ pre > code { border: 0; padding-right: 0; padding-left: 0; }
 #blog time { color: #007d85; font-size: 14px; }
 #blog .horizontal-line { width: 250px; color: #e8e8e8; }
 
+/* Press */
+#press { padding-top: 50px; margin-left: 30%; margin-right: 30%; font-family: "freight-big-pro", Helvetica, Arial, sans-serif; }
+#press h2 { font-weight: 700; font-size: 37px; line-height: 30px; padding-top: 20px; margin-bottom: 30px; }
+#press p { font-size: 16px; letter-spacing: 0.1em; }
+#press time { color: #007d85; font-size: 14px; }
+#press .horizontal-line { width: 250px; color: #e8e8e8; }
+
 /** Syntax highlighting styles */
 .highlight { background: #fff; }
 .highlight .c { color: #998; font-style: italic; }
