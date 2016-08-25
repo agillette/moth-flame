@@ -373,9 +373,26 @@
   margin-left: 30%;
   margin-right: 30%;
   font-family: $base-font-family;
-  h2 {
+  //Title
+  h1 {
       font-weight: 700;
       font-size: 37px;
+      line-height: 30px;
+      padding-top: 20px;
+      margin-bottom: 30px;
+      letter-spacing: 0.1em;
+  }
+
+  //Subtitle
+  h2 {
+    font-weight: 700;
+    font-size: 30px;
+  }
+
+  //Section headers
+  h3 {
+      font-weight: 700;
+      font-size: $base-font-size;
       line-height: 30px;
       padding-top: 20px;
       margin-bottom: 30px;
@@ -395,6 +412,11 @@
     width: 250px;
     color: $grey-color-light;
   }
+
+  .align-middle {
+    display: block;
+    margin: 0 auto;
+  }
 }
 
 /* Press */
@@ -403,7 +425,7 @@
   margin-left: 30%;
   margin-right: 30%;
   font-family: $base-font-family;
-  h2 {
+  h1 {
       font-weight: 700;
       font-size: 37px;
       line-height: 30px;

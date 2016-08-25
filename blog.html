@@ -5,8 +5,8 @@ layout: default
   {% for post in site.blog reversed %}
   <div>
     <hr class="horizontal-line"></hr>
-    <time class="date">{{ post.date | date: "%B %d<br>%Y" }}</time>
-    <h2>{{ post.title }}</h2>
+    <time>{{ post.date | date: "%B %d<br>%Y" }}</time>
+    <h1>{{ post.title }}</h1>
     <p>{{ post.content }}</p>
   </div>
   {% endfor %}
