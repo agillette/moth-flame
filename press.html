@@ -5,7 +5,6 @@ layout: default
   {% for post in site.press reversed %}
   <div>
     <hr class="horizontal-line"></hr>
-    <time>{{ post.date | date: "%B %d<br>%Y" }}</time>
     <h1>{{ post.title }}</h1>
     <p>{{ post.content }}</p>
   </div>
