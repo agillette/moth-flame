@@ -45,13 +45,13 @@
         color: #797979;
         line-height: $base-line-height;
         font-family: $base-sans-family;
-        font-size: 10px;
+        font-size: 0.6771vw;
         text-transform: uppercase;
         letter-spacing: 0.1em;
 
         // Gaps between nav items, but not on the first one
         &:not(:first-child) {
-            margin-left: 40px;
+            margin-left: 2.8646vw;
         }
     }
 
@@ -258,8 +258,20 @@
 /* Intro Section */
 
 #intro {
-    background: url('../img/home-bg.jpg') center center no-repeat;
-    background-size: cover;
+    video#introBackground { 
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        min-width: 100%;
+        min-height: 100%;
+        width: auto;
+        height: auto;
+        z-index: -100;
+        -ms-transform: translateX(-50%) translateY(-50%);
+        -moz-transform: translateX(-50%) translateY(-50%);
+        -webkit-transform: translateX(-50%) translateY(-50%);
+        transform: translateX(-50%) translateY(-50%);
+    }
     #branding {
         position: absolute;
         top: 50%;
@@ -300,6 +312,12 @@
             height: 60vh;
             width: 90vw;
             text-align: left;
+            h1 {
+                font-size: 4.7656vw;
+            }
+            h2 {
+                font-size: 1.5625vw;
+            }
             .legal {
                 text-align: right;
                 position: absolute;
@@ -335,11 +353,12 @@
         h2 {
             padding-top: 25vh;
             text-align: left;
-            font-size: 37px;
+            font-size: 3.8021vw;
+            line-height: 3.6458vw;
         }
         p {
-            font-size: 15px;
-            line-height: 20px;
+            font-size: 1.40625vw;
+            line-height: 1.9791666667vw;
         }
     }
 }
