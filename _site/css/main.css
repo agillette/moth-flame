@@ -2,7 +2,7 @@
 body, h1, h2, h3, h4, h5, h6, p, blockquote, pre, hr, dl, dd, ol, ul, figure { margin: 0; padding: 0; }
 
 /** Basic styling */
-body { font-family: "freight-big-pro", Helvetica, Arial, sans-serif; font-size: 16px; line-height: 1.5; font-weight: 300; color: #fff; background-color: #1e1f20; -webkit-text-size-adjust: 100%; }
+body { font-family: "freight-big-pro", Helvetica, Arial, sans-serif; font-size: 16px; line-height: 1.5; font-weight: 300; color: #fff; background-color: #000; -webkit-text-size-adjust: 100%; }
 
 /** Set `margin-bottom` to maintain vertical rhythm */
 h1, h2, h3, h4, h5, h6, p, blockquote, pre, ul, ol, dl, figure, .highlight { margin-bottom: 15px; }
@@ -117,10 +117,11 @@ pre > code { border: 0; padding-right: 0; padding-left: 0; }
 /* Home Sections */
 .home-section { min-height: 100vh; position: relative; }
 
-.home-section:nth-child(even) { background: #000; }
+.home-section:nth-child(even) { background: #1e1f20; }
+
+.fpBackground { position: absolute; top: 50%; left: 50%; min-width: 100%; min-height: 100%; width: auto; height: auto; z-index: -100; -ms-transform: translateX(-50%) translateY(-50%); -moz-transform: translateX(-50%) translateY(-50%); -webkit-transform: translateX(-50%) translateY(-50%); transform: translateX(-50%) translateY(-50%); }
 
 /* Intro Section */
-#intro video#introBackground { position: absolute; top: 50%; left: 50%; min-width: 100%; min-height: 100%; width: auto; height: auto; z-index: -100; -ms-transform: translateX(-50%) translateY(-50%); -moz-transform: translateX(-50%) translateY(-50%); -webkit-transform: translateX(-50%) translateY(-50%); transform: translateX(-50%) translateY(-50%); }
 #intro #branding { position: absolute; top: 50%; left: 25%; width: 50%; text-align: center; }
 #intro #branding h1, #intro #branding h2, #intro #branding p { font-family: "futura-pt", Helvetica, Arial, sans-serif; text-transform: uppercase; }
 #intro #branding h1 { font-size: 50px; line-height: 1; letter-spacing: 0.1em; font-weight: 500; }
