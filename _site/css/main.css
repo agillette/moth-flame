@@ -7,7 +7,7 @@ body { font-family: "freight-big-pro", Helvetica, Arial, sans-serif; font-size: 
 html, body { max-width: 100vw; }
 
 /** Set `margin-bottom` to maintain vertical rhythm */
-h1, h2, h3, h4, h5, h6, p, blockquote, pre, ul, ol, dl, figure, .highlight { margin-bottom: 15px; }
+h1, h2, h3, h4, h5, h6, p, blockquote, pre, ul, ol, dl, figure, .highlight { margin-bottom: 15px; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
 
 /** Images */
 img { max-width: 100%; vertical-align: middle; }
@@ -47,7 +47,7 @@ pre > code { border: 0; padding-right: 0; padding-left: 0; }
 @media screen and (max-width: 800px) { .wrapper { max-width: -webkit-calc(800px - (30px)); max-width: calc(800px - (30px)); padding-right: 15px; padding-left: 15px; } }
 
 /** Clearfix */
-.wrapper:after, .footer-col-wrapper:after { content: ""; display: table; clear: both; }
+.wrapper:after, .footer-col-wrapper:after, #slider:after { content: ""; display: table; clear: both; }
 
 /** Icons */
 .icon > svg { display: inline-block; width: 16px; height: 16px; vertical-align: middle; }
@@ -143,6 +143,14 @@ pre > code { border: 0; padding-right: 0; padding-left: 0; }
 @media screen and (min-width: 768px) { #about { padding-left: 54vw; padding-right: 5vw; }
   #about h2 { padding-top: 25vh; text-align: left; font-size: 3.8021vw; line-height: 3.6458vw; }
   #about p { font-size: 1.40625vw; line-height: 1.9791666667vw; } }
+/* Work */
+#slider { margin: 11.875vw auto; width: 86.042vw; }
+
+.work-result { display: block; float: left; width: 19.4271vw; margin: 0 1.0417vw; }
+.work-result img { margin-bottom: 1.3021vw; }
+.work-result p, .work-result h3 { font-size: 0.9375vw; line-height: 1.1458vw; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+.work-result h3 { letter-spacing: 0.1em; font-family: "futura-pt", Helvetica, Arial, sans-serif; text-transform: uppercase; }
+
 /* Contact */
 #contact { text-align: center; }
 #contact h2 { font-weight: 700; font-size: 37px; line-height: 30px; padding-top: 160px; margin-bottom: 60px; }

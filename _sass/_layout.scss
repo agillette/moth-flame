@@ -365,6 +365,35 @@
     }
 }
 
+/* Work */
+
+#slider {
+    margin: 11.875vw auto;
+    @extend %clearfix;
+    width: 86.042vw;
+}
+
+.work-result {
+    display: block;
+    float: left;
+    width: 19.4271vw;
+    margin: 0 1.0417vw;
+    img {
+        margin-bottom: 1.3021vw;
+    }
+    p, h3 {
+        font-size: 0.9375vw;
+        line-height: 1.1458vw;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+    }
+    h3 {
+        letter-spacing: 0.1em;
+        font-family: $base-sans-family;
+        text-transform: uppercase;
+    }
+}
+
 /* Contact */
 
 #contact {
