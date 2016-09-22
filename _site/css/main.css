@@ -54,11 +54,13 @@ pre > code { border: 0; padding-right: 0; padding-left: 0; }
 .icon > svg path { fill: #828282; }
 
 /** Site header */
-.site-header { min-height: 56px; position: fixed; top: 0; left: 0; width: 100%; z-index: 99; }
+#header { min-height: 56px; position: fixed; top: 0; left: 0; width: 100%; z-index: 99; }
 
-@media only screen and (min-width: 768px) { .site-header { left: 5vw; width: 90vw; } }
-.site-title { font-size: 26px; height: 48px; letter-spacing: -1px; margin-bottom: 0; float: left; background: url("../img/logo-mf.png") center center no-repeat; background-size: contain; text-indent: -9999px; }
+@media only screen and (min-width: 768px) { #header { left: 5vw; width: 90vw; } }
+.site-title { font-size: 26px; height: 96px; width: 96px; letter-spacing: -1px; margin-bottom: 0; float: left; background: url("../img/logo-mf.png") center center no-repeat; background-size: contain; text-indent: -9999px; transition: all 0.15s; }
 .site-title, .site-title:visited { color: #fff; }
+
+.scrolled .site-title { height: 48px; width: 48px; }
 
 .site-nav { float: right; line-height: 56px; }
 .site-nav .menu-icon { display: none; }
@@ -148,7 +150,7 @@ pre > code { border: 0; padding-right: 0; padding-left: 0; }
 
 .work-result { display: block; float: left; width: 19.4271vw; margin: 0 1.0417vw; }
 .work-result img { margin-bottom: 1.3021vw; }
-.work-result p, .work-result h3 { font-size: 0.9375vw; line-height: 1.1458vw; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+.work-result p, .work-result h3 { font-size: 0.9375vw; line-height: 1.1458vw; }
 .work-result h3 { letter-spacing: 0.1em; font-family: "futura-pt", Helvetica, Arial, sans-serif; text-transform: uppercase; }
 
 /* Contact */

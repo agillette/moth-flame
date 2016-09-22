@@ -1,7 +1,7 @@
 /**
  * Site header
  */
-.site-header {
+#header {
     min-height: 56px;
     position: fixed;
     top: 0;
@@ -11,7 +11,7 @@
 }
 
 @media only screen and (min-width: 768px) {
-    .site-header {
+    #header {
         left: 5vw;
         width: 90vw;
     }
@@ -19,18 +19,25 @@
 
 .site-title {
     font-size: 26px;
-    height: 48px;
+    height: 96px;
+    width: 96px;
     letter-spacing: -1px;
     margin-bottom: 0;
     float: left;
     background: url('../img/logo-mf.png') center center no-repeat;
     background-size: contain;
     text-indent: -9999px;
+    transition: all 0.15s;
 
     &,
     &:visited {
         color: $text-color;
     }
+}
+
+.scrolled .site-title {
+    height: 48px;
+    width: 48px;
 }
 
 .site-nav {
@@ -384,8 +391,6 @@
     p, h3 {
         font-size: 0.9375vw;
         line-height: 1.1458vw;
-        -webkit-font-smoothing: antialiased;
-        -moz-osx-font-smoothing: grayscale;
     }
     h3 {
         letter-spacing: 0.1em;

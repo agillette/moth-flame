@@ -19,7 +19,7 @@
 
   <body>
 
-    <header class="site-header">
+    <header id="header">
 
     <a class="site-title" href="/moth-flame/">Moth + Flame</a>
 
@@ -118,5 +118,16 @@
     </div>
 
   </body>
+  <script>
+    var header = document.getElementById('header');
+    window.onscroll = function() {headerScroll()};
 
+    function headerScroll() {
+        if (document.body.scrollTop > 150 || document.documentElement.scrollTop > 150) {
+            header.className = "scrolled";
+        } else {
+            header.className = "";
+        }
+    }
+  </script>
 </html>
