@@ -431,18 +431,16 @@
 
 /* Blog */
 #blog {
-  padding-top: 50px;
   margin-left: 30%;
   margin-right: 30%;
   font-family: $base-font-family;
   //Title
   h1 {
       font-weight: 700;
-      font-size: 37px;
-      line-height: 30px;
-      padding-top: 20px;
-      margin-bottom: 30px;
-      letter-spacing: 0.1em;
+      font-size: 3.125vw;
+      line-height: 3.9063vw;
+      margin-bottom: 1.5vw;
+      margin-top: 3.125vw;
   }
 
   //Subtitle
@@ -453,16 +451,18 @@
 
   //Section headers
   h3 {
-      font-weight: 700;
-      font-size: $base-font-size;
-      line-height: 30px;
-      padding-top: 20px;
-      margin-bottom: 30px;
+      font-weight: normal;
+      font-size: 2.0833vw;
+      margin: 1.5vw 0;
+  }
+
+  img {
+      margin: 1.5vw 0;
   }
 
   p {
-    font-size: $base-font-size;
-    letter-spacing: 0.1em;
+    font-size: 1.5625vw;
+    letter-spacing: 0.04em;
   }
 
   time {
@@ -473,11 +473,12 @@
   .horizontal-line {
     width: 250px;
     color: $grey-color-light;
+    margin-top: 7.8125vw;
   }
 
   .align-middle {
     display: block;
-    margin: 0 auto;
+    margin: 1.5vw auto;
   }
 }
 
