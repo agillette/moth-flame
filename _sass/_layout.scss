@@ -34,6 +34,7 @@
         letter-spacing: 0.1em;
         line-height: 4.6875vw;
         font-weight: 500;
+        padding-top: 0.35em;
         span {
             color: #007d85;
         }
@@ -41,6 +42,9 @@
     &,
     &:visited {
         color: $text-color;
+    }
+    &:hover {
+        text-decoration: none;
     }
 }
 
@@ -309,6 +313,11 @@
         left: 25%;
         width: 50%;
         text-align: center;
+        #butterfly {
+            width: 10.9896vw;
+            margin-top: -10.9896vw;
+            margin-left: -5vw;
+        }
         h1, h2, p {
             font-family: $base-sans-family;
             text-transform: uppercase;

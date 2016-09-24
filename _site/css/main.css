@@ -58,9 +58,10 @@ pre > code { border: 0; padding-right: 0; padding-left: 0; }
 
 @media only screen and (min-width: 768px) { #header { left: 5vw; width: 90vw; } }
 .site-title { height: 4.6875vw; margin-bottom: 0; padding-left: 5.7292vw; background: url("../img/logo-mf.png") left center no-repeat; background-size: contain; font-family: "futura-pt", Helvetica, Arial, sans-serif; position: absolute; top: 56.25vw; left: 0; z-index: 99; }
-.site-title h1 { text-transform: uppercase; font-size: 2.0313vw; letter-spacing: 0.1em; line-height: 4.6875vw; font-weight: 500; }
+.site-title h1 { text-transform: uppercase; font-size: 2.0313vw; letter-spacing: 0.1em; line-height: 4.6875vw; font-weight: 500; padding-top: 0.35em; }
 .site-title h1 span { color: #007d85; }
 .site-title, .site-title:visited { color: #fff; }
+.site-title:hover { text-decoration: none; }
 
 .scrolled .site-title { position: fixed; top: 0; }
 
@@ -131,6 +132,7 @@ pre > code { border: 0; padding-right: 0; padding-left: 0; }
   .fpBackground { width: 100%; } }
 /* Intro Section */
 #intro #branding { position: absolute; top: 50%; left: 25%; width: 50%; text-align: center; }
+#intro #branding #butterfly { width: 10.9896vw; margin-top: -10.9896vw; margin-left: -5vw; }
 #intro #branding h1, #intro #branding h2, #intro #branding p { font-family: "futura-pt", Helvetica, Arial, sans-serif; text-transform: uppercase; }
 #intro #branding h1 { font-size: 50px; line-height: 1; letter-spacing: 0.1em; font-weight: 500; }
 #intro #branding h1 .plus { color: #007d85; font-size: 30px; }
