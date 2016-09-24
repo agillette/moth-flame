@@ -141,11 +141,12 @@ pre > code { border: 0; padding-right: 0; padding-left: 0; }
 /* About Section */
 #about { padding: 0 30px; }
 #about h2 { padding-top: 300px; font-weight: 700; font-size: 30px; line-height: 35px; text-align: center; }
-#about p { font-size: 13px; line-height: 19px; margin: 25px 0 0 0; }
+#about p { font-family: "futura-pt", Helvetica, Arial, sans-serif; font-size: 12px; line-height: 19px; margin: 25px 0 0 0; }
+#about p em { font-style: normal; color: #007d85; }
 
 @media screen and (min-width: 768px) { #about { padding-left: 54vw; padding-right: 5vw; }
-  #about h2 { padding-top: 25vh; text-align: left; font-size: 3.8021vw; line-height: 3.6458vw; }
-  #about p { font-size: 1.40625vw; line-height: 1.9791666667vw; } }
+  #about h2 { padding-top: 30vh; text-align: left; font-size: 3.8021vw; line-height: 3.6458vw; margin-bottom: 1em; }
+  #about p { font-size: 1.3542vw; line-height: 1.9791666667vw; } }
 /* Work */
 #slider { margin: 11.875vw auto; width: 86.042vw; }
 

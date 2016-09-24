@@ -359,9 +359,14 @@
         text-align: center;
     }
     p {
-        font-size: 13px;
+        font-family: $base-sans-family;
+        font-size: 12px;
         line-height: 19px;
         margin: 25px 0 0 0;
+        em {
+            font-style: normal;
+            color: #007d85;
+        }
     }
 }
 
@@ -370,13 +375,14 @@
         padding-left: 54vw;
         padding-right: 5vw;
         h2 {
-            padding-top: 25vh;
+            padding-top: 30vh;
             text-align: left;
             font-size: 3.8021vw;
             line-height: 3.6458vw;
+            margin-bottom: 1em;
         }
         p {
-            font-size: 1.40625vw;
+            font-size: 1.3542vw;
             line-height: 1.9791666667vw;
         }
     }
