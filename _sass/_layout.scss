@@ -273,13 +273,22 @@
     left: 50%;
     min-width: 100%;
     min-height: 100%;
-    width: 100%;
+    width: auto;
     height: auto;
     z-index: -100;
     -ms-transform: translateX(-50%) translateY(-50%);
     -moz-transform: translateX(-50%) translateY(-50%);
     -webkit-transform: translateX(-50%) translateY(-50%);
     transform: translateX(-50%) translateY(-50%);
+}
+
+@media screen and (min-width: 768px) {
+    .home-section {
+        min-height: 56.25vw;
+    }
+    .fpBackground {
+        width: 100%;
+    }
 }
 
 /* Intro Section */
