@@ -486,6 +486,26 @@
     }
 }
 
+@media screen and (min-width: 768px) {
+    #contact {
+        padding-left: 54vw;
+        padding-right: 5vw;
+        text-align: left;
+        h2 {
+            font-size: 3.8021vw;
+            line-height: 3.6458vw;
+            margin-bottom: 1em;
+        }
+        p {
+            font-size: 1.1458vw;
+            line-height: 1.2;
+        }
+        p:after {
+            margin: 1.1458vw 0;
+        }
+    }
+}
+
 /* Blog */
 #blog {
   margin-left: 30%;

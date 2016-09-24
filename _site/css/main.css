@@ -171,6 +171,10 @@ pre > code { border: 0; padding-right: 0; padding-left: 0; }
 #contact p a, #contact p .grey { color: #007d85; }
 #contact p:after { content: ''; display: block; width: 72px; height: 1px; margin: 20px auto; background: #505151; }
 
+@media screen and (min-width: 768px) { #contact { padding-left: 54vw; padding-right: 5vw; text-align: left; }
+  #contact h2 { font-size: 3.8021vw; line-height: 3.6458vw; margin-bottom: 1em; }
+  #contact p { font-size: 1.1458vw; line-height: 1.2; }
+  #contact p:after { margin: 1.1458vw 0; } }
 /* Blog */
 #blog { margin-left: 30%; margin-right: 30%; font-family: "freight-big-pro", Helvetica, Arial, sans-serif; }
 #blog h1 { font-weight: 700; font-size: 3.125vw; line-height: 3.9063vw; margin-bottom: 1.5vw; margin-top: 3.125vw; }
