@@ -20,12 +20,14 @@
 .site-title {
     height: 4.6875vw;
     margin-bottom: 0;
-    float: left;
     padding-left: 5.7292vw;
     background: url('../img/logo-mf.png') left center no-repeat;
     background-size: contain;
-    transition: all 0.15s;
     font-family: $base-sans-family;
+    position: absolute;
+    top: 56.25vw;
+    left: 0;
+    z-index: 99;
     h1 {
         text-transform: uppercase;
         font-size: 2.0313vw;
@@ -43,6 +45,8 @@
 }
 
 .scrolled .site-title {
+    position: fixed;
+    top: 0;
 }
 
 .site-nav {

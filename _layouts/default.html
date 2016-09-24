@@ -13,11 +13,14 @@
 
   </body>
   <script>
-    var header = document.getElementById('header');
+    var header = document.getElementById('targettable');
+    var offset = document.getElementById('about');
+    offset = offset.offsetTop;
+    console.log(offset);
     window.onscroll = function() {headerScroll()};
 
     function headerScroll() {
-        if (document.body.scrollTop > 150 || document.documentElement.scrollTop > 150) {
+        if (document.body.scrollTop > offset || document.documentElement.scrollTop > offset) {
             header.className = "scrolled";
         } else {
             header.className = "";
