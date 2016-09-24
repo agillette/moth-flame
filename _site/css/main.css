@@ -153,6 +153,7 @@ pre > code { border: 0; padding-right: 0; padding-left: 0; }
 .work-result { display: block; float: left; width: 19.4271vw; margin: 0 1.0417vw; }
 .work-result img { margin-bottom: 1.3021vw; }
 .work-result p, .work-result h3 { font-size: 0.9375vw; line-height: 1.1458vw; }
+.work-result p { font-family: "futura-pt", Helvetica, Arial, sans-serif; }
 .work-result h3 { letter-spacing: 0.1em; font-family: "futura-pt", Helvetica, Arial, sans-serif; text-transform: uppercase; }
 
 /* Contact */

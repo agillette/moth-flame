@@ -409,6 +409,9 @@
         font-size: 0.9375vw;
         line-height: 1.1458vw;
     }
+    p {
+        font-family: $base-sans-family;
+    }
     h3 {
         letter-spacing: 0.1em;
         font-family: $base-sans-family;
