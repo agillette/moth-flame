@@ -13,17 +13,44 @@
 
   </body>
   <script>
-    var header = document.getElementById('targettable');
-    var offset = document.getElementById('about');
-    offset = offset.offsetTop;
-    console.log(offset);
+    function createRefs(name) {
+      return document.getElementById(name);
+    }
+
+    var header = createRefs('targettable');
+    var aboutOffset = createRefs('about').offsetTop;
+    var aboutButton = createRefs('aboutBtn');
+    var clientsOffset = createRefs('clients').offsetTop;
+    var clientsButton = createRefs('clientsBtn');
+    var workOffset = createRefs('work').offsetTop;
+    var workButton = createRefs('workBtn');
+    var contactOffset = createRefs('contact').offsetTop;
+    var contactButton = createRefs('contactBtn');
     window.onscroll = function() {headerScroll()};
 
     function headerScroll() {
-        if (document.body.scrollTop > offset || document.documentElement.scrollTop > offset) {
-            header.className = "scrolled";
-        } else {
-            header.className = "";
+        if (document.body.scrollTop < aboutOffset || document.documentElement.scrollTop < aboutOffset) {
+            header.classList.remove('scrolled');
+            aboutButton.classList.remove('active');
+            clientsButton.classList.remove('active');
+            workButton.classList.remove('active');
+            contactButton.classList.remove('active');
+        }
+        if (document.body.scrollTop > aboutOffset || document.documentElement.scrollTop > aboutOffset) {
+            header.classList.add('scrolled');
+            aboutButton.classList.add('active');
+        }
+        if (document.body.scrollTop > clientsOffset || document.documentElement.scrollTop > clientsOffset) {
+            clientsButton.classList.add('active');
+            aboutButton.classList.remove('active');
+        }
+        if (document.body.scrollTop > workOffset || document.documentElement.scrollTop > workOffset) {
+            workButton.classList.add('active');
+            clientsButton.classList.remove('active');
+        }
+        if (document.body.scrollTop > contactOffset || document.documentElement.scrollTop > contactOffset) {
+            contactButton.classList.add('active');
+            workButton.classList.remove('active');
         }
     }
   </script>
