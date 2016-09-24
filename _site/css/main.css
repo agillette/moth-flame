@@ -57,10 +57,10 @@ pre > code { border: 0; padding-right: 0; padding-left: 0; }
 #header { min-height: 56px; position: fixed; top: 0; left: 0; width: 100%; z-index: 99; }
 
 @media only screen and (min-width: 768px) { #header { left: 5vw; width: 90vw; } }
-.site-title { font-size: 26px; height: 96px; width: 96px; letter-spacing: -1px; margin-bottom: 0; float: left; background: url("../img/logo-mf.png") center center no-repeat; background-size: contain; text-indent: -9999px; transition: all 0.15s; }
+.site-title { height: 4.6875vw; margin-bottom: 0; float: left; padding-left: 5.7292vw; background: url("../img/logo-mf.png") left center no-repeat; background-size: contain; transition: all 0.15s; font-family: "futura-pt", Helvetica, Arial, sans-serif; }
+.site-title h1 { text-transform: uppercase; font-size: 2.0313vw; letter-spacing: 0.1em; line-height: 4.6875vw; font-weight: 500; }
+.site-title h1 span { color: #007d85; }
 .site-title, .site-title:visited { color: #fff; }
-
-.scrolled .site-title { height: 48px; width: 48px; }
 
 .site-nav { float: right; line-height: 56px; }
 .site-nav .menu-icon { display: none; }

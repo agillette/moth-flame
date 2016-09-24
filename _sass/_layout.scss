@@ -18,17 +18,24 @@
 }
 
 .site-title {
-    font-size: 26px;
-    height: 96px;
-    width: 96px;
-    letter-spacing: -1px;
+    height: 4.6875vw;
     margin-bottom: 0;
     float: left;
-    background: url('../img/logo-mf.png') center center no-repeat;
+    padding-left: 5.7292vw;
+    background: url('../img/logo-mf.png') left center no-repeat;
     background-size: contain;
-    text-indent: -9999px;
     transition: all 0.15s;
-
+    font-family: $base-sans-family;
+    h1 {
+        text-transform: uppercase;
+        font-size: 2.0313vw;
+        letter-spacing: 0.1em;
+        line-height: 4.6875vw;
+        font-weight: 500;
+        span {
+            color: #007d85;
+        }
+    }
     &,
     &:visited {
         color: $text-color;
@@ -36,8 +43,6 @@
 }
 
 .scrolled .site-title {
-    height: 48px;
-    width: 48px;
 }
 
 .site-nav {
