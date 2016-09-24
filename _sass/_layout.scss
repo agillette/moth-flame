@@ -49,16 +49,20 @@
     }
 
     .page-link {
-        color: #797979;
+        color: #fff;
         line-height: $base-line-height;
         font-family: $base-sans-family;
-        font-size: 0.6771vw;
+        font-size: 0.7292vw;
         text-transform: uppercase;
         letter-spacing: 0.1em;
-
-        // Gaps between nav items, but not on the first one
-        &:not(:first-child) {
-            margin-left: 2.8646vw;
+        opacity: 0.4;
+        padding: 0.6em 1.25em;
+        margin: 0 0.25em;
+        border-radius: 1.6em;
+        &:hover {
+            background: rgba(255,255,255,0.4);
+            opacity: 1;
+            text-decoration: none;
         }
     }
 
@@ -323,6 +327,12 @@
             text-align: left;
             h1 {
                 font-size: 4.7656vw;
+                .plus {
+                    font-size: 2.8125vw;
+                    display: inline-block;
+                    transform: translateY(-25%);
+                    margin-left: 0.5em;
+                }
             }
             h2 {
                 font-size: 1.5625vw;

@@ -64,8 +64,8 @@ pre > code { border: 0; padding-right: 0; padding-left: 0; }
 
 .site-nav { float: right; line-height: 56px; }
 .site-nav .menu-icon { display: none; }
-.site-nav .page-link { color: #797979; line-height: 1.5; font-family: "futura-pt", Helvetica, Arial, sans-serif; font-size: 0.6771vw; text-transform: uppercase; letter-spacing: 0.1em; }
-.site-nav .page-link:not(:first-child) { margin-left: 2.8646vw; }
+.site-nav .page-link { color: #fff; line-height: 1.5; font-family: "futura-pt", Helvetica, Arial, sans-serif; font-size: 0.7292vw; text-transform: uppercase; letter-spacing: 0.1em; opacity: 0.4; padding: 0.6em 1.25em; margin: 0 0.25em; border-radius: 1.6em; }
+.site-nav .page-link:hover { background: rgba(255, 255, 255, 0.4); opacity: 1; text-decoration: none; }
 @media screen and (max-width: 600px) { .site-nav { position: absolute; top: 9px; right: 30px; text-align: right; }
   .site-nav .menu-icon { display: block; float: right; width: 36px; height: 26px; line-height: 0; padding-top: 10px; text-align: center; }
   .site-nav .menu-icon > svg { width: 18px; height: 15px; }
@@ -135,6 +135,7 @@ pre > code { border: 0; padding-right: 0; padding-left: 0; }
 
 @media screen and (min-width: 768px) { #intro #branding { left: 5vw; top: 40vh; height: 60vh; width: 90vw; text-align: left; }
   #intro #branding h1 { font-size: 4.7656vw; }
+  #intro #branding h1 .plus { font-size: 2.8125vw; display: inline-block; transform: translateY(-25%); margin-left: 0.5em; }
   #intro #branding h2 { font-size: 1.5625vw; }
   #intro #branding .legal { text-align: right; position: absolute; bottom: 3vw; right: 0; } }
 /* About Section */
