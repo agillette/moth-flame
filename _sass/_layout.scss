@@ -276,10 +276,6 @@
     overflow: hidden;
 }
 
-.home-section:nth-child(even) {
-    background: #1e1f20;
-}
-
 .fpBackground { 
     position: absolute;
     top: 50%;
@@ -416,6 +412,17 @@
     }
 }
 
+/* Clients */
+
+#clients {
+    background: #fff;
+    overflow: hidden;
+    video {
+        z-index: 1;
+        opacity: 0.87;
+    }
+}
+
 /* Work */
 
 #slider {
@@ -449,6 +456,8 @@
 /* Contact */
 
 #contact {
+    background: url('../img/contact-bg.png') top left no-repeat;
+    background-size: cover;
     text-align: center;
     h2 {
         font-weight: 700;

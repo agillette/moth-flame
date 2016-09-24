@@ -124,8 +124,6 @@ pre > code { border: 0; padding-right: 0; padding-left: 0; }
 /* Home Sections */
 .home-section { min-height: 100vh; position: relative; overflow: hidden; }
 
-.home-section:nth-child(even) { background: #1e1f20; }
-
 .fpBackground { position: absolute; top: 50%; left: 50%; min-width: 100%; min-height: 100%; width: auto; height: auto; z-index: -100; -ms-transform: translateX(-50%) translateY(-50%); -moz-transform: translateX(-50%) translateY(-50%); -webkit-transform: translateX(-50%) translateY(-50%); transform: translateX(-50%) translateY(-50%); }
 
 @media screen and (min-width: 768px) { .home-section { min-height: 56.25vw; }
@@ -153,6 +151,10 @@ pre > code { border: 0; padding-right: 0; padding-left: 0; }
 @media screen and (min-width: 768px) { #about { background: transparent; padding-left: 54vw; padding-right: 5vw; }
   #about h2 { padding-top: 30vh; text-align: left; font-size: 3.8021vw; line-height: 3.6458vw; margin-bottom: 1em; }
   #about p { font-size: 1.3542vw; line-height: 1.9791666667vw; } }
+/* Clients */
+#clients { background: #fff; overflow: hidden; }
+#clients video { z-index: 1; opacity: 0.87; }
+
 /* Work */
 #slider { margin: 11.875vw auto; width: 86.042vw; }
 
@@ -163,7 +165,7 @@ pre > code { border: 0; padding-right: 0; padding-left: 0; }
 .work-result h3 { letter-spacing: 0.1em; font-family: "futura-pt", Helvetica, Arial, sans-serif; text-transform: uppercase; }
 
 /* Contact */
-#contact { text-align: center; }
+#contact { background: url("../img/contact-bg.png") top left no-repeat; background-size: cover; text-align: center; }
 #contact h2 { font-weight: 700; font-size: 37px; line-height: 30px; padding-top: 160px; margin-bottom: 60px; }
 #contact p { font-family: "futura-pt", Helvetica, Arial, sans-serif; text-transform: uppercase; font-size: 15px; }
 #contact p a, #contact p .grey { color: #007d85; }
