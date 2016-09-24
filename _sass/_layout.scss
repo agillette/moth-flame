@@ -273,7 +273,7 @@
     left: 50%;
     min-width: 100%;
     min-height: 100%;
-    width: auto;
+    width: 100%;
     height: auto;
     z-index: -100;
     -ms-transform: translateX(-50%) translateY(-50%);
@@ -372,6 +372,7 @@
 
 @media screen and (min-width: 768px) {
     #about {
+        background: transparent;
         padding-left: 54vw;
         padding-right: 5vw;
         h2 {

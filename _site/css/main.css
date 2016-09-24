@@ -123,7 +123,7 @@ pre > code { border: 0; padding-right: 0; padding-left: 0; }
 
 .home-section:nth-child(even) { background: #1e1f20; }
 
-.fpBackground { position: absolute; top: 50%; left: 50%; min-width: 100%; min-height: 100%; width: auto; height: auto; z-index: -100; -ms-transform: translateX(-50%) translateY(-50%); -moz-transform: translateX(-50%) translateY(-50%); -webkit-transform: translateX(-50%) translateY(-50%); transform: translateX(-50%) translateY(-50%); }
+.fpBackground { position: absolute; top: 50%; left: 50%; min-width: 100%; min-height: 100%; width: 100%; height: auto; z-index: -100; -ms-transform: translateX(-50%) translateY(-50%); -moz-transform: translateX(-50%) translateY(-50%); -webkit-transform: translateX(-50%) translateY(-50%); transform: translateX(-50%) translateY(-50%); }
 
 /* Intro Section */
 #intro #branding { position: absolute; top: 50%; left: 25%; width: 50%; text-align: center; }
@@ -144,7 +144,7 @@ pre > code { border: 0; padding-right: 0; padding-left: 0; }
 #about p { font-family: "futura-pt", Helvetica, Arial, sans-serif; font-size: 12px; line-height: 19px; margin: 25px 0 0 0; }
 #about p em { font-style: normal; color: #007d85; }
 
-@media screen and (min-width: 768px) { #about { padding-left: 54vw; padding-right: 5vw; }
+@media screen and (min-width: 768px) { #about { background: transparent; padding-left: 54vw; padding-right: 5vw; }
   #about h2 { padding-top: 30vh; text-align: left; font-size: 3.8021vw; line-height: 3.6458vw; margin-bottom: 1em; }
   #about p { font-size: 1.3542vw; line-height: 1.9791666667vw; } }
 /* Work */
