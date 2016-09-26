@@ -161,8 +161,10 @@ pre > code { border: 0; padding-right: 0; padding-left: 0; }
   #about p { font-size: 1.3542vw; line-height: 1.9791666667vw; } }
 /* Clients */
 #clients { background: #fff; overflow: hidden; }
-#clients video { z-index: 1; opacity: 0.87; }
+#clients video { z-index: 1; opacity: 0.87; margin-top: -1vw; }
 
+@media screen and (min-width: 768px) { #clients { min-height: 54.25vw !important; }
+  #clients video { margin-top: -1vw; } }
 /* Work */
 #slider { margin: 11.875vw auto; width: 86.042vw; }
 
