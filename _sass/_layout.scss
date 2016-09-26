@@ -304,6 +304,52 @@
 /* Intro Section */
 
 #intro {
+    #openReel {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate3d(-50%, -50%);
+        font-family: $base-sans-family;
+        font-size: 1.3542vw;
+        font-weight: normal;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        color: #fff;
+        z-index: 100;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        opacity: 0.2;
+        transition: opacity 0.2s;
+        &:hover {
+            text-decoration: none;
+            opacity: 0.6;
+        }
+    }
+    #closeReel {
+        position: absolute;
+        top: 0;
+        right: 20px;
+        font-family: $base-sans-family;
+        font-size: 3.3542vw;
+        font-weight: normal;
+        color: #fff;
+        z-index: 100;
+        opacity: 0;
+        transition: opacity 0.2s;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        &.visible {
+            opacity: 0.4;
+            &:hover {
+                text-decoration: none;
+                opacity: 0.8;
+            }
+        }
+        &:hover {
+            text-decoration: none;
+            opacity: 0;
+        }
+    }
     #branding {
         position: absolute;
         top: 50%;

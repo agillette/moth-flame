@@ -114,9 +114,15 @@
     }
 
     var reelBtn = createRefs('openReel');
+    var reelCloseBtn = createRefs('closeReel');
     var reelContainer = createRefs('introPopup')
     reelBtn.onclick = function() {
       reelContainer.classList.add('open');
+      reelCloseBtn.classList.add('visible');
+    }
+    reelCloseBtn.onclick = function() {
+      reelContainer.classList.remove('open');
+      reelCloseBtn.classList.remove('visible');
     }
   </script>
 </html>
