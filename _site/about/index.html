@@ -112,5 +112,11 @@
             workButton.classList.remove('active');
         }
     }
+
+    var reelBtn = createRefs('openReel');
+    var reelContainer = createRefs('introPopup')
+    reelBtn.onclick = function() {
+      reelContainer.classList.add('open');
+    }
   </script>
 </html>

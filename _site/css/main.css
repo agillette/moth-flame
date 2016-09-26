@@ -136,6 +136,8 @@ pre > code { border: 0; padding-right: 0; padding-left: 0; }
 #intro #branding h1 .plus { color: #007d85; font-size: 30px; }
 #intro #branding h2 { font-size: 16px; letter-spacing: 0.1em; }
 #intro #branding .legal { font-size: 8px; opacity: 0.2; letter-spacing: 0.1em; }
+#intro #introPopup { position: absolute; top: 2vw; left: 6vw; width: 88vw; display: none; }
+#intro #introPopup.open { display: block; z-index: 999; }
 
 @media screen and (min-width: 768px) { #intro #branding { left: 5vw; top: 40vh; height: 60vh; width: 90vw; text-align: left; }
   #intro #branding h1 { font-size: 4.7656vw; }
