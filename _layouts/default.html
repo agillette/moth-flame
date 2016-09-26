@@ -17,7 +17,20 @@
       return document.getElementById(name);
     }
 
+    function scrollTo(to, duration) {
+        if (duration <= 0) return;
+        var difference = to - document.body.scrollTop;
+        var perTick = difference / duration * 10;
+        setTimeout(function() {
+            document.body.scrollTop = document.body.scrollTop + perTick;
+            if (document.body.scrollTop === to) return;
+            scrollTo(to, duration - 10);
+        }, 10);
+    }
+
     var header = createRefs('targettable');
+    var introOffset = createRefs('intro').offsetTop;
+    var introButton = createRefs('introBtn');
     var aboutOffset = createRefs('about').offsetTop;
     var aboutButton = createRefs('aboutBtn');
     var clientsOffset = createRefs('clients').offsetTop;
@@ -27,6 +40,11 @@
     var contactOffset = createRefs('contact').offsetTop;
     var contactButton = createRefs('contactBtn');
     window.onscroll = function() {headerScroll()};
+    introButton.onclick = function(e) {e.preventDefault();scrollTo(introOffset + 5, 150)};
+    aboutButton.onclick = function(e) {e.preventDefault();scrollTo(aboutOffset + 5, 150)};
+    clientsButton.onclick = function(e) {e.preventDefault();scrollTo(clientsOffset + 5, 150)};
+    workButton.onclick = function(e) {e.preventDefault();scrollTo(workOffset + 5, 150)};
+    contactButton.onclick = function(e) {e.preventDefault();scrollTo(contactOffset + 5, 150)};
 
     function headerScroll() {
         if (document.body.scrollTop < aboutOffset || document.documentElement.scrollTop < aboutOffset) {
