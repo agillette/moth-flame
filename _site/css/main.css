@@ -54,9 +54,9 @@ pre > code { border: 0; padding-right: 0; padding-left: 0; }
 .icon > svg path { fill: #828282; }
 
 /** Site header */
-#header { min-height: 56px; position: fixed; top: 0; left: 0; width: 100%; z-index: 99; background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8) 0%, transparent 100%); }
+#header { min-height: 56px; position: fixed; top: 0; left: 0; width: 100%; z-index: 99; background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6) 0%, transparent 100%); }
 
-@media only screen and (min-width: 768px) { #header { left: 0; width: 100%; padding: 0 5vw 5vw 5vw; } }
+@media only screen and (min-width: 768px) { #header { left: 0; width: 100%; padding: 0 5vw 3vw 5vw; } }
 .site-title { height: 4.6875vw; margin-bottom: 0; padding-left: 5.7292vw; background: url("../img/logo-mf.png") left center no-repeat; background-size: contain; font-family: "futura-pt", Helvetica, Arial, sans-serif; position: absolute; top: 56.25vw; left: 0; z-index: 100; }
 .site-title h1 { text-transform: uppercase; font-size: 2.0313vw; letter-spacing: 0.1em; line-height: 4.6875vw; font-weight: 500; padding-top: 0.35em; }
 .site-title h1 span { color: #007d85; }
