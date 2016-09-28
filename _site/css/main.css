@@ -56,7 +56,7 @@ pre > code { border: 0; padding-right: 0; padding-left: 0; }
 /** Site header */
 #header { min-height: 56px; position: fixed; top: 0; left: 0; width: 100%; z-index: 99; background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6) 0%, transparent 100%); }
 
-@media only screen and (min-width: 768px) { #header { left: 0; width: 100%; padding: 0 5vw 3vw 5vw; } }
+@media only screen and (min-width: 768px) { #header { left: 0; width: calc(100% - 5vw); padding: 0 5vw 3vw 5vw; } }
 .site-title { height: 4.6875vw; margin-bottom: 0; padding-left: 5.7292vw; background: url("../img/logo-mf.png") left center no-repeat; background-size: contain; font-family: "futura-pt", Helvetica, Arial, sans-serif; position: absolute; top: 56.25vw; left: 0; z-index: 100; }
 .site-title h1 { text-transform: uppercase; font-size: 2.0313vw; letter-spacing: 0.1em; line-height: 4.6875vw; font-weight: 500; padding-top: 0.35em; }
 .site-title h1 span { color: #007d85; }
@@ -129,8 +129,9 @@ pre > code { border: 0; padding-right: 0; padding-left: 0; }
 @media screen and (min-width: 768px) { .home-section { min-height: 56.25vw; }
   .fpBackground { width: 100%; } }
 /* Intro Section */
-#intro #openReel { position: absolute; top: 50%; left: 50%; transform: translate3d(-50%, -50%); font-family: "futura-pt", Helvetica, Arial, sans-serif; font-size: 1.3542vw; font-weight: normal; letter-spacing: 0.1em; text-transform: uppercase; color: #fff; z-index: 100; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; opacity: 0.2; transition: opacity 0.2s; }
+#intro #openReel { position: absolute; top: 50%; left: 50%; transform: translateY(-50%) translateX(-50%); font-family: "futura-pt", Helvetica, Arial, sans-serif; font-size: 1.3542vw; font-weight: normal; letter-spacing: 0.1em; text-transform: uppercase; color: #fff; z-index: 100; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; opacity: 0.2; transition: opacity 0.2s; text-align: center; }
 #intro #openReel:hover { text-decoration: none; opacity: 0.6; }
+#intro #openReel img { width: 4.6875vw; }
 #intro #closeReel { position: absolute; top: 0; right: 20px; font-family: "futura-pt", Helvetica, Arial, sans-serif; font-size: 3.3542vw; font-weight: normal; color: #fff; z-index: 100; opacity: 0; transition: opacity 0.2s; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
 #intro #closeReel.visible { opacity: 0.4; }
 #intro #closeReel.visible:hover { text-decoration: none; opacity: 0.8; }
@@ -168,7 +169,7 @@ pre > code { border: 0; padding-right: 0; padding-left: 0; }
 /* Work */
 #slider { margin: 11.875vw auto; width: 86.042vw; }
 
-.work-result { display: block; float: left; width: 19.4271vw; margin: 0 1.0417vw; }
+.work-result { display: block; float: left; width: 19.4271vw; margin: 0 1.0417vw 3vw 1.0417vw; }
 .work-result img { margin-bottom: 1.3021vw; }
 .work-result p, .work-result h3 { font-size: 0.9375vw; line-height: 1.1458vw; }
 .work-result p { font-family: "futura-pt", Helvetica, Arial, sans-serif; }
